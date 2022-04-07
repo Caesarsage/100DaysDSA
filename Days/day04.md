@@ -4,17 +4,44 @@ Arrays are a simple data structure for storing lots of similar items. They exist
 
 ## Questions
 
-- Maximum Consecutive Ones [](../ProblemsAndSolutions/array01.py)
-- []
-- []
+- [Maximum Consecutive Ones](../ProblemsAndSolutions/max_consecutives.py)
+- [Find Number with even number of Digits](../ProblemsAndSolutions/even_no_digit.py)
+- [Squares of a sorted array](../ProblemsAndSolutions/sorted_array.py)
 
 ## Solution thought flow
 
 Q1.
+
+>Given a binary array nums, return the maximum number of Subsecutive 1's in the array
 
 - set a variable to keep track of maximum ones and current ones.
 - loop through each num in the array 
 - for each number, if it is equal to 1
 - increase current ones
 - else, find maximum ones as max between itself and current ones and set to zero
+  
+Q2.
 
+> Given an array nums of integers, return how many of them contain an even number of digits
+
+- set a count variable
+- loop through the array 
+- since we are considering each digit but have an integer array, convert each num to a string
+- check if the len of the new digit str(num) is divisible by 2
+- increase the count and return after loops ends
+
+
+Q3. 
+
+> Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+ 
+
+- loop through the array
+- square each number first
+- then sort the array of squared.
+
+
+I am  welcoming any more optimized solution you have, Create a PR
+## we move
+
+see you on <a href="./day05.md">Day 05</a>
