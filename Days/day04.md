@@ -41,7 +41,7 @@ Q3.
 - then sort the array of squared.
 
 
-I am  welcoming any more optimized solution you have, Create a PR
+###### I am  welcoming any more optimized solution you have, Make a PR
 ## we move
 
 see you on <a href="./day05.md">Day 05</a>
