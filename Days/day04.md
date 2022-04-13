@@ -4,9 +4,9 @@ Arrays are a simple data structure for storing lots of similar items. They exist
 
 ## Questions
 
-- [Maximum Consecutive Ones](../ProblemsAndSolutions/max_consecutives.py)
-- [Find Number with even number of Digits](../ProblemsAndSolutions/even_no_digit.py)
-- [Squares of a sorted array](../ProblemsAndSolutions/sorted_array.py)
+- [Maximum Consecutive Ones](../Solutions/max_consecutives.py)
+- [Find Number with even number of Digits](../Solutions/even_no_digit.py)
+- [Squares of a sorted array](../Solutions/sorted_array.py)
 
 ## Solution thought flow
 

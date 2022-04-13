@@ -1,8 +1,8 @@
 ## Array operations
 
-- Inserting
-- Deleting
-- Searching
+- [Inserting](day05.md)
+- [Deleting](day06.md)
+- [Searching](day07.md)
 
 ### Inserting
 
@@ -32,9 +32,8 @@ Once the space is created for the new element, we proceed with the insertion. If
 
 ## Questions
 
-- [Maximum Consecutive Ones](../ProblemsAndSolutions/max_consecutives.py)
-- [Find Number with even number of Digits](../ProblemsAndSolutions/even_no_digit.py)
-- [Squares of a sorted array](../ProblemsAndSolutions/sorted_array.py)
+- [Duplicate Zeros](../Solutions/duplicate_zeros.py)
+- [Merge sorted arr](../Solutions/merge_sorted_arr.py)
 
 ## Solution thought flow
 
@@ -52,7 +51,24 @@ Note that elements beyond the length of the original array are not written. Do t
   
 Q2.
 
-> 
+> You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+
+> Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+
+> The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+
+
+- Using two pointers
+- since first array is large enough for the other accommodation
+- Have a pointer to the last zero in arr1. (last = m+n-1)
+- while arr1 integer(m) and arr2 integer(n) are greater than zero
+  - check if last non-zero integer of array1 is greater than last index of array2, make last arr1 index equal to last arr1 non-zero number and decrease m.
+  - else, make the last arr1 num equal to last arr2 number and decrease n
+- finally decrease last created at the beginning for both case
+- fill arr1 with left over element just incase by
+- while n is greater than 0
+- set arr1 last element equal to arr2 last non-zero element
+- swap n and last with n-1 and last -1
 
 ###### I am  welcoming any more optimized solution you have, Make a PR
 ## we move

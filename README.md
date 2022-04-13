@@ -27,8 +27,8 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 ### Array Data Structure
 
 - [✔️] ♾️ 4 > [Array - 01](Days/day04.md)
-- [] ♾️ 5 > [](Days/day05.md)
-- [] ♾️ 6 > [](Days/day06.md)
+- [✔️] ♾️ 5 > [Array -02](Days/day05.md)
+- [✔️] ♾️ 6 > [Array -03](Days/day06.md)
 - [] ♾️ 7 > [](Days/day07.md)
 - [] ♾️ 8 > [](Days/day08.md)
 - [] ♾️ 9 > [](Days/day09.md)
