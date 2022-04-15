@@ -1,9 +1,6 @@
-# Thanks for wanting to contribute !!!
+# Thanks for wanting to contribute
 
-
-
-
-##### Follow the simple method to make contribution on an even better solution (in language is welcomed):
+##### Follow the simple method to make contribution on an even better solution (any language is welcomed)
 
 - Fork the repository
 - Clone the forked repository
