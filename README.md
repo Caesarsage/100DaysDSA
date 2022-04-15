@@ -2,20 +2,19 @@
 
 ###### (Method from MichaelCade 90DaysOfDevOps)
 
-This repository is used to document my journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. I will be starting this journey on the Q2, April 2022 but the idea is that we take 100 days 
+This repository is used to document my journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. I will be starting this journey on the Q2, April 2022 but the idea is that we take 100 days.
 
-The reason for documenting these days is so that others can take something from it and also hopefully enhance the resources. 
+The reason for documenting these days is so that others can take something from it and also hopefully enhance the resources and also improve oneself.
 
-The goal is to take 100 days, 2 hour a day, to tackle over 20 areas of DSA to a foundational knowledge. 
+The goal is to take 100 days, 2 hour a day, to tackle over 20 areas of DSA to a foundational knowledge.
 
-This will not cover all things DSA but it will cover the areas that I feel will benefit my learning and understanding overall. 
-
+This will not cover all things DSA but it will cover the areas that I feel will benefit my learning and understanding overall.
 
 ## Contributing
 
 - [✔️] ♾️ 1 > [How to contribute for a better solution](contributions.md)
 
-## Progress 
+## Progress
 
 - [✔️] ♾️ 1 > [Introduction](Days/day01.md)
 
