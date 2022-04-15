@@ -1,6 +1,6 @@
 # 100DaysOfDSA FROM Destiny Erhabor
 
-### method from MichaelCade 90DaysOfDevOps
+###### (Method from MichaelCade 90DaysOfDevOps)
 
 This repository is used to document my journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. I will be starting this journey on the Q2, April 2022 but the idea is that we take 100 days 
 
@@ -13,7 +13,7 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 
 ## Contributing
 
-- [✔️] ♾️ 1 > [How to contribute for a better solution](contributing.md)
+- [✔️] ♾️ 1 > [How to contribute for a better solution](contributions.md)
 
 ## Progress 
 
@@ -29,9 +29,9 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 - [✔️] ♾️ 4 > [Array - 01](Days/day04.md)
 - [✔️] ♾️ 5 > [Array -02](Days/day05.md)
 - [✔️] ♾️ 6 > [Array -03](Days/day06.md)
-- [] ♾️ 7 > [](Days/day07.md)
-- [] ♾️ 8 > [](Days/day08.md)
-- [] ♾️ 9 > [](Days/day09.md)
+- [✔️] ♾️ 7 > [Array - 04](Days/day07.md)
+- [] ♾️ 8 > [Array - 05](Days/day08.md)
+- [] ♾️ 9 > [Array - 06](Days/day09.md)
 - [] ♾️ 10>[](Days/day10.md)
 
 ### Linked List

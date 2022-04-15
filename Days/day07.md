@@ -1,88 +1,64 @@
-# COMPUTER NETWORKING
+## Array operations
 
-The internet is a collection of computer networks
+- [Inserting](day05.md)
+- [Deleting](day06.md)
+- [Searching](day07.md)
 
-## How it started - The internet
+There's more than one way of searching an Array, but for now, we're going to focus on the simplest way. Searching means to find an occurrence of a particular element in the Array and return its position. We might need to search an Array to find out whether or not an element is present in the Array. We might also want to search an Array that is arranged in a specific fashion to determine which index to insert a new element at.
 
-US Set up the ARPA (Advance research program agency) for researching new for technology.
+If we know the index in the Array that may contain the element we're looking for, then the search becomes a constant time operation—we simply go to the given index and check whether or not the element is there.
 
-ARPA developed the ARPANET for them to communicate with each other. ARPANET was in MIT, Stanford, Utah and VC LA. They used
-TCP/IP protocol to make this communication possible.
+- Linear Search
+- Binary Search
 
-First web site had just hyperlinks and no search engines , etc.
+## Linear Search
 
-## Protocols
+If the index is not known, which is the case most of the time, then we can check every element in the Array. We continue checking elements until we find the element we're looking for, or we reach the end of the Array. This technique for finding an element by checking through all elements one by one is known as the linear search algorithm. In the worst case, a linear search ends up checking the entire Array. Therefore, the time complexity for a linear search is O(N).
 
-Rules for communicating between two or more computers. The internet society create these rules.
+## Binary Search
 
-TCP helps send data to reach it desired destination and consider its reach
-UDP (user datagram protocol) to send data without considering if its reach everyone e.g video conferencing.
-HTTP used by web browser, that define the format of data transfer between client and servers
+There is another way of searching an Array. If the elements in the Array are in sorted order, then we can use binary search. Binary search is where we repeatedly look at the middle element in the Array, and determine whether the element we're looking for must be to the left, or to the right. Each time we do this, we're able to halve the number of elements we still need to search, making binary search a lot faster than linear search!
 
-IP Address are unique code used to identify websites. e.g X.X.X.X and each X has number 0 to 225. Ip address are used to determine where your application are located.
+The downside of binary search though is that it only works if the data is sorted. If we only need to perform a single search, then it's faster to just do a linear search, as it takes longer to sort than to linear search. If we're going to be performing a lot of searches, it is often worth sorting the data first so that we can use binary search for the repeated searches.
 
-PORT No are used to determine which application you ae using to communicate/ it is 16bit.
+## Questions
 
-Internet are connected together deep underground with fibre cables connecting thw world together.
+- [check if N and its double exist](../Solutions/checkIfExist.py)
+- [valid mountain array](../Solutions/validMountain.py)
 
-$ curl ip config/all -s : get the ip address of your internet provider
+## Solution thought flow
 
-- LAN (local area network) : for small area connection of computers through ethernets, wifi
-- MAN (Metropolitan area network): for across the city
-- WAN (wide area network): Across countries using optical fibre cables
-- Frame relay : Help connect LAN to WAN
-  
-Internet Service Provider (ISP)
+> Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 *M).
+More formally check if there exists two indices i and j such that :
+>i != j
+0 <= i, j < arr.length
+arr[i] == 2* arr[j]
 
-## OSI MODEL
+- Using hashSet, iterate through the arr
+- check if 2 times arr value is in the hashSet or if the value is divisible by 2 (arr%2== 0 and arr//2 in the hashSet) and return True. That is you have found the double
+- else add the number to the hashSet
+- after the loop and no match is found, return False
 
-- Application layer - This is implemented in software and users interact with it e.g browsers
-- Presentation layer - Converts data (in character, numbers, files, etc) to machine representable binary format, its encrypt data, provide abstraction, compressed data
-- Session layer - Helps in setting up and managing up connections and enables sending and receiving of data, Authentication, Authorization
-- Transport layer - Transfer data through (1) segmentation with port no, destination source and sequence no(for reassembling) , (2) Flow control to control amount of data being transport (3) Error control.
-- Network layer - Works for the transmission of the received data segment from one computer to another that is located in a diff network. This is where you find the routers. It helps in logical addressing through sender/Receiver IP assigning forming an IP packet so data reach destination.
-- Data link layer - Allows to directly communicate with computers and host. Perform two function, controls are data are control form the media and add mask address
-- Physical layer - Contains the hardware
+Q2.
+>Given an array of integers arr, return true if and only if it is a valid mountain array.
+Recall that arr is a mountain array if and only if:
+arr.length >= 3
+There exists some i with 0 < i < arr.length - 1 such that:
+arr[0] < arr[1] < ... < arr[i - 1] < arr[i]
+arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
 
-### How the OSI MODEL WORKS - sending data to your friend
+- Move from left of the arr to the right where possible it's increasing
+- Move from end to left until our data is decreasing
+- if we meet somewhere in the middle point which is neighbor 0 nor n-1, it means that we found our mountain, in other case array is not
+- set two variables, start and end
+- while start is not equal to the length of the array minus one and next number in the array is greater than the current start.
+- increase the start by one
+- Again for the end, while the end is not equal to zero and the next value from back(end-1) is greater than the  current end value
+- decrease the end value by 1
+- return the start equal to end and end end not equal to len of arr minus one and start not equal to zero. True return if yes
 
-Send data from Application layer to presentation layer then to session layer and to transport layer which make it into packets and segments and then to network layer which assign the Ip addresses and then to the Data link layer which assign the mask addresses and send to the physical router. The physical router send the data to the physical layer of your friend and moves all, from data link to application layer of your friend.
+###### I am  welcoming any more optimized solution you have,Make a PR
 
-TCP/IP MODEL
+# we move
 
-This is the internet protocol suite and layer reduces
-
-- Application layer
-- Transport layer
-- Network layer
-- Data link
-- Physical
-
-# DEEP DIVE INTO EACH LAYER
-
-## Application layer
-
-- user interaction
-- WhatsApp, browsers, etc
-- where : devices
-- protocols
-- client - server architecture (request and response)
-  - P2P , Peer to  peer communication e.g bittorrent
-
-### Protocols.
-
-- web protocols:
-  - TCP/IP
-    - HTTP : Client - Server architecture (request and response), it uses TCP. it does not store any information about the user info. it is a stateless protocol
-    - DHIP
-    - FTP (file transfer protocol)
-    - SMTP : sending emails etc
-    - POP3 or IMAC : for receiving emails
-    - SSH
-    - VNC (Virtual Network computing)
-  - Telnet (enable user to manage an account or device remotely. Very low level): port 23
-  - UDP : stateless connection
-
-- Sockets :Used for messaging between devices
-- Ports :Tells us which device we are working with.
-  - Ephemeral ports exist on client side only
+see you on <a href="./day08.md">Day 08</a>
