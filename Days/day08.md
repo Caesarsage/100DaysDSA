@@ -4,7 +4,8 @@ In programming interviews, the interviewer often expects you to minimise the tim
 
 ## Questions
 
-[Replace Elements with Greatest Element on Right Side]()
-[ Move Zeroes]()
-[Remove Duplicates from Sorted Array]()
-[Remove Element]()
+[Replace Elements with Greatest Element on Right Side](../Solutions/replace_element_gretest_rhs.py)
+[Move Zeroes](../Solutions/move_zeros.py)
+[Sort By Parity](../Solutions/sort_by_parity.py)
+
+## Solution thought flow
