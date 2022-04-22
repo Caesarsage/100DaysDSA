@@ -31,7 +31,7 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 - [✔️] ♾️ 7 > [Array - 04](Days/day07.md)
 - [✔️] ♾️ 8 > [Array - 05](Days/day08.md)
 - [] ♾️ 9 > [Array - 06](Days/day09.md)
-- [] ♾️ 10>[](Days/day10.md)
+- [] ♾️ 10>[Array - 07](Days/day10.md)
 
 ### Linked List
 
