@@ -10,6 +10,10 @@ The goal is to take 100 days, 2 hour a day, to tackle over 20 areas of DSA to a 
 
 This will not cover all things DSA but it will cover the areas that I feel will benefit my learning and understanding overall.
 
+## Blind 75 leetcode problems
+
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+
 ## Contributing
 
 - [✔️] ♾️ 1 > [How to contribute for a better solution](contributions.md)
