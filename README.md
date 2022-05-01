@@ -1,6 +1,26 @@
 # 100DaysOfDSA FROM Destiny Erhabor
-
-###### (Method from MichaelCade 90DaysOfDevOps)
+- [100DaysOfDSA FROM Destiny Erhabor](#100daysofdsa-from-destiny-erhabor)
+  - [Contributing](#contributing)
+  - [Progress](#progress)
+    - [How to learn DSA](#how-to-learn-dsa)
+    - [Array Data Structure](#array-data-structure)
+    - [Big O in Everyday Code](#big-o-in-everyday-code)
+    - [Blazing Fast Lookup with HashTable](#blazing-fast-lookup-with-hashtable)
+    - [Stack and Queues](#stack-and-queues)
+    - [Hash Tables](#hash-tables)
+    - [Trees](#trees)
+    - [Tries](#tries)
+    - [Graphs](#graphs)
+    - [Heaps](#heaps)
+    - [Sorting and Searching](#sorting-and-searching)
+    - [Greedy Algorithm](#greedy-algorithm)
+    - [DP](#dp)
+    - [Divide and Conquer](#divide-and-conquer)
+    - [Recursion](#recursion)
+    - [ODD](#odd)
+    - [Design System](#design-system)
+    - [Concurrency](#concurrency)
+    - [MORE QUESTIONS](#more-questions)
 
 This repository is used to document my journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. I will be starting this journey on the Q2, April 2022 but the idea is that we take 100 days.
 
@@ -22,7 +42,8 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 
 - [✔️] ♾️ 2 > [What to do when learning DSA](Days/day02.md)
 - [✔️] ♾️ 3 > [Choosing a language and platform for solving daily questions](Days/day03.md)
-  
+
+
 ### Array Data Structure
 
 - [✔️] ♾️ 4 > [Array - 01](Days/day04.md)
@@ -31,9 +52,10 @@ This will not cover all things DSA but it will cover the areas that I feel will 
 - [✔️] ♾️ 7 > [Array - 04](Days/day07.md)
 - [✔️] ♾️ 8 > [Array - 05](Days/day08.md)
 - [] ♾️ 9 > [Array - 06](Days/day09.md)
-- [] ♾️ 10>[Array - 07](Days/day10.md)
+### Big O in Everyday Code
 
-### Linked List
+- [✔️] > [Big O](Days/day10.md)
+### Blazing Fast Lookup with HashTable
 
 - [] ♾️ 11 > [](Days/day11.md)
 - [] ♾️ 12 > [](Days/day12.md)
