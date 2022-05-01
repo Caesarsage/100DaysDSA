@@ -1,10 +1,18 @@
-## Array operations
+# Array operations
 
-- [Inserting](day05.md)
-- [Deleting](day06.md)
-- [Searching](day07.md)
+- [Array operations](#array-operations)
+  - [Inserting](#inserting)
+    - [inserting element at the end of the Array](#inserting-element-at-the-end-of-the-array)
+    - [Inserting at the Start of an Array](#inserting-at-the-start-of-an-array)
+    - [Inserting at given index of an Array](#inserting-at-given-index-of-an-array)
+  - [Questions](#questions)
+    - [Solution thought flow](#solution-thought-flow)
+    - [Q1. Duplicate Zeros](#q1-duplicate-zeros)
+    - [Q2. Merge sorted arr](#q2-merge-sorted-arr)
+          - [I am  welcoming any more optimized solution you have, Make a PR](#i-am--welcoming-any-more-optimized-solution-you-have-make-a-pr)
+    - [we move](#we-move)
 
-### Inserting
+## Inserting
 
 Inserting a new element into an Array can take many forms :
 
@@ -24,7 +32,7 @@ To insert an element at the start of an Array, we'll need to shift all other ele
 
 In terms of time complexity analysis, this is a linear time complexity: O(N)O(N), where NN is the length of the Array.
 
-### Inserting at the End of an Array
+### Inserting at given index of an Array
 
 Similarly, for inserting at any given index, we first need to shift all the elements from that index onwards one position to the right.
 
@@ -35,9 +43,9 @@ Once the space is created for the new element, we proceed with the insertion. If
 - [Duplicate Zeros](../Solutions/duplicate_zeros.py)
 - [Merge sorted arr](../Solutions/merge_sorted_arr.py)
 
-## Solution thought flow
+### Solution thought flow
 
-Q1.
+### Q1. Duplicate Zeros
 
 > Given a fixed-length integer array arr, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
@@ -49,7 +57,7 @@ Note that elements beyond the length of the original array are not written. Do t
 - increase the index twices
 - else, increase the index onces
   
-Q2.
+### Q2. Merge sorted arr
 
 > You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
@@ -71,6 +79,6 @@ Q2.
 - swap n and last with n-1 and last -1
 
 ###### I am  welcoming any more optimized solution you have, Make a PR
-## we move
+### we move
 
 see you on <a href="./day06.md">Day 06</a>

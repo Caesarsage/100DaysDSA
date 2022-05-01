@@ -1,8 +1,15 @@
-## Array operations
-
-- [Inserting](day05.md)
-- [Deleting](day06.md)
-- [Searching](day07.md)
+# Array operations
+- [Array operations](#array-operations)
+  - [Searching](#searching)
+  - [Linear Search](#linear-search)
+  - [Binary Search](#binary-search)
+  - [Questions](#questions)
+  - [Solution thought flow](#solution-thought-flow)
+    - [Q1 check if N and its double exist](#q1-check-if-n-and-its-double-exist)
+    - [Q2. valid mountain array](#q2-valid-mountain-array)
+          - [I am  welcoming any more optimized solution you have,Make a PR](#i-am--welcoming-any-more-optimized-solution-you-havemake-a-pr)
+- [we move](#we-move)
+## Searching
 
 There's more than one way of searching an Array, but for now, we're going to focus on the simplest way. Searching means to find an occurrence of a particular element in the Array and return its position. We might need to search an Array to find out whether or not an element is present in the Array. We might also want to search an Array that is arranged in a specific fashion to determine which index to insert a new element at.
 
@@ -28,6 +35,8 @@ The downside of binary search though is that it only works if the data is sorted
 
 ## Solution thought flow
 
+### Q1 check if N and its double exist
+
 > Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 *M).
 More formally check if there exists two indices i and j such that :
 >i != j
@@ -39,7 +48,8 @@ arr[i] == 2* arr[j]
 - else add the number to the hashSet
 - after the loop and no match is found, return False
 
-Q2.
+### Q2. valid mountain array
+
 >Given an array of integers arr, return true if and only if it is a valid mountain array.
 Recall that arr is a mountain array if and only if:
 arr.length >= 3

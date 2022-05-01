@@ -1,4 +1,12 @@
-## Array In place
+- [Array In place](#array-in-place)
+  - [Questions](#questions)
+  - [Solution thought flow](#solution-thought-flow)
+    - [Q1 Replace Elements with Greatest Element on Right Side](#q1-replace-elements-with-greatest-element-on-right-side)
+    - [Q2.  Move Zeros](#q2--move-zeros)
+    - [Q3 Sort By Parity](#q3-sort-by-parity)
+          - [I am  welcoming any more optimized solution you have,Make a PR](#i-am--welcoming-any-more-optimized-solution-you-havemake-a-pr)
+- [we move](#we-move)
+# Array In place
 
 In programming interviews, the interviewer often expects you to minimise the time and space complexity of your implementation. In-place Array operations help to reduce space complexity, and so are a class of techniques that pretty much everybody encounters regularly in interviews.
 
@@ -9,7 +17,8 @@ In programming interviews, the interviewer often expects you to minimise the tim
 [Sort By Parity](../Solutions/sort_by_parity.py)
 
 ## Solution thought flow
-Q1
+### Q1 Replace Elements with Greatest Element on Right Side
+
 >Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
 Return k after placing the final result in the first k slots of nums.
@@ -20,7 +29,7 @@ Do not allocate extra space for another array. You must do this by modifying the
 - iterate from back to end
 - each round, we set the array value to the max variable and update the max variable to the  maximum between it current state and current value
 
-Q2.
+### Q2.  Move Zeros
 
 >Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 Note that you must do this in-place without making a copy of the array.
@@ -32,7 +41,8 @@ Note that you must do this in-place without making a copy of the array.
 - return the nums at the end of the loop
 
 
-Q3
+### Q3 Sort By Parity
+
 >Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
 Return any array that satisfies this condition.
 
@@ -42,3 +52,9 @@ Return any array that satisfies this condition.
 - we check if the current beginning number is divisible by 2, hence increase the beginning number by 1
 - else, we swap the beg num and end num with end number and beg num respectively
 - we can return the arr num after while loop
+
+###### I am  welcoming any more optimized solution you have,Make a PR
+
+# we move
+
+see you on <a href="./day09.md">Day 09</a>
