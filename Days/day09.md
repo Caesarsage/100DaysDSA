@@ -16,7 +16,7 @@
 [Height Checker](../Solutions/height_checker.py)
 [Third Maximum Number](../)
 [2D Array - DS](../Solution/hourglass.py)
-[Arrays: Left Rotation](../)
+[Arrays: Left Rotation](../Solution/../Solutions/rotateLeft.py)
 [New Year Chaos](../Solutions)
 [Minimum Swap 2](../)
 [Array Manipulation](../)
