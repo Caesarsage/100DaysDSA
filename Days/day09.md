@@ -15,7 +15,7 @@
 
 [Height Checker](../Solutions/height_checker.py)
 [Third Maximum Number](../)
-[2D Array - DS](../Solution)
+[2D Array - DS](../Solution/hourglass.py)
 [Arrays: Left Rotation](../)
 [New Year Chaos](../Solutions)
 [Minimum Swap 2](../)
@@ -36,6 +36,73 @@ Return the number of indices where heights[i] != expected[i]
 
 >[https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays]
 
+```
+// Example 1
+// arr[i][j] =
+// [
+//   [ 1, 1, 1, 0, 0, 0 ],
+//   [ 0, 1, 0, 0, 0, 0 ],
+//   [ 1, 1, 1, 0, 0, 0 ],
+//   [ 0, 0, 2, 4, 4, 0 ],
+//   [ 0, 0, 0, 2, 0, 0 ],
+//   [ 0, 0, 1, 2, 4, 0 ]
+// ]
+// an hourglass might look like
+// 1 1 1
+//   1 
+// 1 1 1
+// or
+// arr[0][0], a[0][1], a[0][2]
+//            a[1][1]
+// arr[2][0], a[2][1], a[2][2]
+// The sum of this first hourglass is 7
+
+All hour glass combinations:
+
+1 1 1     1 1 0     1 0 0     0 0 0
+  1         0         0         0
+1 1 1     1 1 0     1 0 0     0 0 0
+ 
+0 1 0     1 0 0     0 0 0     0 0 0
+  1         1         0         0
+0 0 2     0 2 4     2 4 4     4 4 0
+1 1 1     1 1 0     1 0 0     0 0 0
+  0         2         4         4
+0 0 0     0 0 2     0 2 0     2 0 0
+0 0 2     0 2 4     2 4 4     4 4 0
+  0         0         2         0
+0 0 1     0 1 2     1 2 4     2 4 0
+
+The sum of each hourglass from left to right, top to bottom:
+
+7     4     2     0
+4     8     10    8
+3     6     7     6
+3     9     19    14
+
+The larges value of all the hourglasses:
+
+If we do the same and replace the for index of arr[i][j] with our col variable.
+1, 1, 1, 0, 0, 0     
+0, 1, 0, 0, 0, 0     
+1, 1, 1, 0, 0, 0     
+0, 0, 2, 4, 4, 0     
+0, 0, 0, 2, 0, 0     
+0, 0, 1, 2, 4, 0
+// row = 0 from our for loop
+// col = 0 from our for loop
+ 
+// First hourglass is
+ 
+arr[row][col]         // 1 - top left
+arr[row][col + 1]     // 1 - top middle
+arr[row][col + 2]     // 1 - top right
+arr[row + 1][col + 1] // 1 - middle middle
+arr[row + 2][col]     // 1 - bottom left
+arr[row + 2][col + 1] // 1 - bottom middle
+arr[row + 2][col + 2] // 1 - bottom right
+
+``
 ### Q4 Arrays: Left Rotation
 
 >[https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays]
@@ -51,5 +118,3 @@ Return the number of indices where heights[i] != expected[i]
 ### Q7 Array Manipulaton
 
 >[https://www.hackerrank.com/challenges/crush/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays]
-
-
