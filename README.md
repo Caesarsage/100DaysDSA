@@ -1,11 +1,12 @@
 # 100DaysOfDSA FROM Destiny Erhabor
 - [100DaysOfDSA FROM Destiny Erhabor](#100daysofdsa-from-destiny-erhabor)
+  - [Blind 75 leetcode problems](#blind-75-leetcode-problems)
   - [Contributing](#contributing)
   - [Progress](#progress)
     - [How to learn DSA](#how-to-learn-dsa)
     - [Array Data Structure](#array-data-structure)
     - [Big O in Everyday Code](#big-o-in-everyday-code)
-    - [Blazing Fast Lookup with HashTable](#blazing-fast-lookup-with-hashtable)
+    - [More on Array](#more-on-array)
     - [Stack and Queues](#stack-and-queues)
     - [Hash Tables](#hash-tables)
     - [Trees](#trees)
@@ -55,11 +56,11 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - [✔️] ♾️ 6 > [Array -03](Days/day06.md)
 - [✔️] ♾️ 7 > [Array - 04](Days/day07.md)
 - [✔️] ♾️ 8 > [Array - 05](Days/day08.md)
-- [] ♾️ 9 > [Array - 06](Days/day09.md)
+- [✔️] ♾️ 9 > [Array - 06](Days/day09.md)
 ### Big O in Everyday Code
 
 - [✔️] > [Big O](Days/day10.md)
-### Blazing Fast Lookup with HashTable
+### More on Array
 
 - [] ♾️ 11 > [](Days/day11.md)
 - [] ♾️ 12 > [](Days/day12.md)
