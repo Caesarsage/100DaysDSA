@@ -22,7 +22,7 @@ def search_quadruplets(arr, target):
   for i in range(0, len(arr)-3):
     if i > 0 and arr[i] == arr[i-1]:
       continue
-    for j in range(0, len(arr)-2):
+    for j in range(i+1, len(arr)-2):
       if j > 0 and arr[j] == arr[j-1]:
         continue
       
