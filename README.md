@@ -1,4 +1,22 @@
-# 100DaysOfDSA FROM Destiny Erhabor
+# hacktoberfest-accepted 
+
+##### Follow the simple method to make contribution on an even better solution (any language is welcomed)
+
+- Have an Algorithm or Data Structure ?
+- Clone the forked repository
+- Create a branch
+- In the folder `/Solutions`
+- Have an Algorithm or Data Structure ?  
+  - find your language folder/ create a new one if not found.
+  - create a new file with the format `{solution-title}-{githubusername}`
+  - e.g `even_no_digit-caesarsage.py`
+  - comment your thought/algorithmic process and complexity
+- Add, Commit and Push
+  - commit with a descriptive name
+- Create a PR
+- Await Review
+
+# 100DaysOfDSA
 - [100DaysOfDSA FROM Destiny Erhabor](#100daysofdsa-from-destiny-erhabor)
   - [Blind 75 leetcode problems](#blind-75-leetcode-problems)
   - [Contributing](#contributing)
@@ -23,7 +41,7 @@
     - [Concurrency](#concurrency)
     - [MORE QUESTIONS](#more-questions)
 
-This repository is used to document my journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. I will be starting this journey on the Q2, April 2022 but the idea is that we take 100 days.
+This repository is used to document the journey on getting a better foundational knowledge of Data Structure and Algorithm, alongside solving problems. 
 
 The reason for documenting these days is so that others can take something from it and also hopefully enhance the resources and also improve oneself.
 
